@@ -1,0 +1,101 @@
+1. $ git --version  
+Checking version of git
+ 
+2. $ git status 
+for checking the folder/file is git repository or not.
+
+3. $ git init 
+for making git repository.
+
+4. $ git add . 
+stages new and modified, without deleted.
+
+5. $ git commit -m " "
+used to add commits in our repository.
+
+6. $ git log
+used to check who can made or add commits changes in project.
+
+7. 7. $ git config user.name "Simran"
+   $ git config user.email "simran@rajoriya.yahoo"
+
+                       or 
+
+   $ git config --global user.name "Simran"
+   $ git config --global user.email "simran@rajoriya.yahoo"
+for changing name and email address. global keyword is used for when we want to change name and email for all repositories. If you dont use global keyword this mail and email is valid for only this repository.
+
+---------------------------------SCANNING CHANGES TO FILES-----------------------------------
+8. $ git diff utils.txt
+to see/scanning changes to the files. 
+
+9. $ git diff --staged utils.txt
+to see the changes of staged files.
+
+10. $ git reset utils.txt
+
+             or
+
+    $ git reset . 
+dot for all files.
+
+    $ git checkout utils.txt
+
+          or
+
+    $ git checkout . 
+is used to unstaged files and go to old commit.
+
+--------------------------------GIT add -A and GIT add. DIFFERENCE---------------------------
+11. $ git add -A
+stages all.
+      
+      or
+
+    $ git add .
+stages new and modified, without deleted.
+
+      or
+
+$ git add -u
+stages modified and deleted, without new.
+
+-----------------------------------CLONING A GIT REPOSITORY----------------------------------
+
+12. $ ls -la
+the content of a directory can be listed.
+
+13. $ git clone GitHub:123454645757568
+after git clone repository name to clone the git repository in our pc.computer.
+
+----------------------IGNORING FILES IN GIT BY ADDING .gitignore FILE------------------------
+
+14. $ touch .gitignore
+to add a git ignore file.
+
+--------------------------------BRANCHES IN GIT----------------------------------------------
+
+15. $ git branch
+to see which branch we have it could be a master branch.
+
+16. $ git branch login system(name of the branch)
+to make new branch or make a copy of a branch.
+
+17. $ git checkout login-system
+to activate our copy of a branch and now we can change anything in repository.
+
+18. $ git checkout master
+Switched to branch 'master'.
+
+19. $ git merge login-system
+merged the branches.
+
+-------------------------DELETING A LOCAL/REMOTE BRANCH IN GIT-------------------------------
+
+20. $ git branch -d login-system(branch name)
+Deleted branch login-system (was fab104d).
+this command is used to delete the branch on local.
+
+21. $ git push origin --delete login-system
+this is used to delete the branch on remote.
+
