@@ -99,3 +99,7 @@ this command is used to delete the branch on local.
 21. $ git push origin --delete login-system
 this is used to delete the branch on remote.
 
+----------------------------------------------------------------------PUSH AN REPOSITORY-----------------------------------------------------------------------------------
+22. $ git remote add origin git@github.com:Rajni2652001/-Python-Problems.git
+23. $ git branch -M main
+24. $ git push -u origin main
